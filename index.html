@@ -5,10 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  
 
   <title>Попробуйте себя в роли графического дизайнера </title>
-  <link rel="shortcut icon" href="./img/111.png" type="image/png">
 </head>
 
 <body>
@@ -23,20 +22,20 @@
       <div class="modal" data-modal="1">
         <img src="./img/Close.svg" alt="" class="modal__cross js-modal-close">
 
-        <div class="form_logo"><img src="./img/Logo.svg" alt=""></div>
-        <form action="" method="post">
-          <input class="form_name" type="text" maxlength="60" placeholder="Имя" name="formParams[full_name]" value="" />
 
-          <input class="form_mail" type="text" maxlength="60" placeholder="E-mail" name="formParams[email]" value="" />
 
-          <input class="form_phone" type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" maxlength="60"
-            placeholder="Телефон" name="formParams[phone]" />
+        <form id="form" method="POST">
+
+
+          <input class="form__input form_name _req " type="text" maxlength="60" placeholder="Имя" name="Имя" value="" />
+
+          <input class=" form__input form_mail _req _email" type="text" maxlength="60" placeholder="E-mail" name="Почта"
+            value="" />
+
+          <input class=" form__input form_phone" type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');"
+            maxlength="60" placeholder="Телефон" name="Телефон" />
           <button class="form_btn">Записаться</button>
 
-          <p class="form_politic">Нажимая на кнопку, я даю <a href="https://vill-institute.com/policy_pers">согласие на
-              обработку своих персональных
-              данных</a> и на <a href="https://vill-institute.com/information_and_advertising_agreement">информационную
-              рассылку</a> в соответствии с <a href="https://vill-institute.com/policy">Политикой</a></p>
         </form>
 
 
@@ -49,7 +48,7 @@
       <div class="stock_body">
 
         <div class="stock_left left_mobfon">
-          <img class="logo" src="./img/Logo.svg" alt="">
+
           <div class="hard">Сложность: с нуля
           </div>
           <div class="try">Попробуйте себя в&nbsp;роли графического дизайнера
